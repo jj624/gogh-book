@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book</title>
+    <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Song Myung', serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .banner {
+            width: 1200px;
+            height: 400px;
+            display: block;
+            position: relative;
+            background-repeat: no-repeat;
+            background-image: 
+                url(./images/book.jpg),
+                url(./images/bg.gif);
+            background-position: 
+                0 0,
+                right top;
+            background-size:
+                306px 400px,
+                906px 400px;
+            text-align: center;
+            
+        }
+
+        .banner h3 {
+            color: #fff;
+            font-size: 40px;
+            font-weight: normal;
+            position: absolute;
+            right: 100px;
+            top: 130px;
+            animation: subTitle 1.5s infinite alternate;
+            opacity: 0;
+        }
+
+        @keyframes subTitle {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .banner h2 {
+            color: #E9EACD;
+            font-size: 50px;
+            font-weight: normal;
+            text-shadow: 1px 1px 1px #f9fae8;
+            position: absolute;
+            right: 90px;
+            bottom: 154px;
+            animation: text 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            animation-fill-mode: forwards;
+            opacity: 0;
+            
+        }
+
+        @keyframes text {
+            0%{
+                transform: translateY(200px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .banner .shop {
+            text-shadow: 1px 1px 1px #f9fae8;
+            font-size: 30px;
+            position: absolute;
+            right: 70px;
+            bottom: 60px;
+            animation: btn 1s infinite alternate;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes btn {
+            0% {
+                font-size: 26px;
+            }
+            100% {
+                font-size: 30px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <h3>100년이 지나도 변치 않는 고흐의 시선과 열정</h3>
+        <h2>
+            &lt;반 고흐, 영혼의 편지&gt; 스페셜 에디션
+        </h2>
+        <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=284544133&start=slayer" class="shop" target="blank" >보러가기 &gt;</a>
+    </div>
+</body>
+</html>
